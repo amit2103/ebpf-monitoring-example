@@ -1,8 +1,8 @@
 ## Demo of EBPF monitoring
 
-# This demo tries to show a demo of EBPF monitoring. There is a simple golang server which calls another golang http server to get the 
-# message to print. The EBPF uses a Kprobe to monitor the http requests flowing through, and prints out the message to console for now.
-# This can easily be changed to send it to a database.
+This demo tries to show a demo of EBPF monitoring. There is a simple golang server which calls another golang http server to get the 
+message to print. The EBPF uses a Kprobe to monitor the http requests flowing through, and prints out the message to console for now.
+This can easily be changed to send it to a database.
 
 
 ### Directory structure
@@ -17,4 +17,4 @@
 Simply run `make` in each of the sub-directories to build those underlying binaries.
 You will need to run these on a Linux machine with [bcc](https://github.com/iovisor/bcc/blob/master/INSTALL.md) installed.
 I used a simple  virtualbox with Ubuntu 22.04,  for the purpose.
-
+	
